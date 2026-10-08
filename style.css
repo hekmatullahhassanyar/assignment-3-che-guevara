@@ -1,0 +1,40 @@
+.custom-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.custom-card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.custom-card h3 {
+  font-size: 1.25rem;
+  color: #dc3545;
+}
+
+@media (min-width: 768px) {
+  .custom-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .custom-card {
+    flex: 1 1 calc(50% - 20px);
+  }
+  .custom-card h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-card {
+    flex: 1 1 calc(33.333% - 20px);
+  }
+  .custom-card h3 {
+    font-size: 2rem;
+  }
+}
